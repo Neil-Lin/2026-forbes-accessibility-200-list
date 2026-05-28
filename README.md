@@ -1,6 +1,6 @@
 # Forbes Accessibility 200 Data
 
-This project organizes the Forbes Accessibility 200 list and enriches the original list information with personal profile links and official website URLs for each selected person or organization.
+This project organizes the [Forbes Accessibility 200](https://www.forbes.com/lists/accessibility/) list and enriches the original list information with personal profile links and official website URLs for each selected person or organization.
 
 The goal is to make the list easier to research, browse, filter, and manually review.
 
