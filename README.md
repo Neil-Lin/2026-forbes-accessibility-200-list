@@ -11,6 +11,7 @@ Main files:
 - `forbes_accessibility_200.json`: The structured dataset of 200 entries, including organization name, lead accessibility officer, impact area, headquarters, Forbes profile, official website, and personal profile links.
 - `output/forbes_accessibility_200.md`: A GitHub-readable Markdown table version of the dataset, generated from the JSON file.
 - `output/forbes_accessibility_200.html`: A browsable HTML version generated from the JSON file for easier reading and searching.
+- `output/index.html`: The GitHub Pages homepage, generated from the JSON file.
 - `render_markdown_from_json.mjs`: Generates the Markdown table from the JSON dataset.
 - `render_from_json.mjs`: Generates the browsable HTML page from the JSON dataset.
 
@@ -24,6 +25,8 @@ node render_from_json.mjs
 ```
 
 Generated files are written to `output/` so they stay separate from source files.
+
+GitHub Pages is deployed by `.github/workflows/pages.yml`. The workflow regenerates `output/` and publishes it whenever changes are pushed to `main`.
 
 ## JSON Schema
 

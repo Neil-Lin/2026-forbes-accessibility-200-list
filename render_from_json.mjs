@@ -3,6 +3,7 @@ import fs from "node:fs";
 const inputPath = "forbes_accessibility_200.json";
 const outputDir = "output";
 const outputPath = `${outputDir}/forbes_accessibility_200.html`;
+const indexPath = `${outputDir}/index.html`;
 const rows = JSON.parse(fs.readFileSync(inputPath, "utf8")).sort(
   (a, b) => Number(a.position) - Number(b.position)
 );
@@ -445,4 +446,6 @@ const html = `<!doctype html>
 
 fs.mkdirSync(outputDir, { recursive: true });
 fs.writeFileSync(outputPath, html);
+fs.writeFileSync(indexPath, html);
 console.log(`Rendered ${outputPath} from ${inputPath}.`);
+console.log(`Rendered ${indexPath} from ${inputPath}.`);
